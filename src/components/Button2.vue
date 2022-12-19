@@ -8,8 +8,7 @@
             ><div class="grid-content ep-bg-purple"
             />
                 <div>
-                  <el-link href="https://element.eleme.io" target="_blank">default</el-link>
-                  <el-link type="primary" >primary</el-link>
+                  <el-link type="primary" @click="getData()">primary</el-link>
                 </div>
 
             </el-col>
@@ -33,25 +32,18 @@ import axios from "axios";
 const danger = ref(null)
 
 function getData() {
-  axios({
-    method: 'get',
-    baseURL: 'http://localhost:8082',
-    url: '/test',
-    'Content-Type': 'application/json',
+  axios.get('http://localhost:8082/test', {
+    params: {
+      ID: 12345
+    }
   })
-      .then((result) => {
-        console.log(result.data)
-        console.log(result.data.name)
-        // process_data(JSON.parse(result.data))
+      .then(function (response: any) {
+        console.log(response);
       })
-      .catch((err) => {
-        console.error(err)
-      })
-}
+      .catch(function (error: any) {
+        console.log(error);
+      }); }
 
-function process_data(){
-  console.log("process data, name is:",data['name'])
-}
 </script>
 <style>
 .el-link {

@@ -1,7 +1,7 @@
 <template>
   <el-config-provider namespace="ep">
 
-  <Button2/>
+    <FormSubmit></FormSubmit>
   </el-config-provider>
 </template>
 
