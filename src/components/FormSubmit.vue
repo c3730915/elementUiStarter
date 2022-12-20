@@ -50,16 +50,18 @@
       <el-input v-model="form.desc" type="textarea" />
     </el-form-item>
     <el-form-item>
-      <el-button type="primary" @click="onSubmit" ref="submitButton">Create</el-button>
+      <el-button type="primary" @click="onSubmit" ref="submitButton" :disabled="isDisable">Create</el-button>
       <el-button>Cancel</el-button>
     </el-form-item>
   </el-form>
 </template>
 
 <script lang="ts" setup>
+
 import {reactive, ref} from 'vue'
 import axios from "axios";
 const submitButton = ref(null);
+let isDisable = ref(false)
 // do not use same name with ref
 const form = reactive({
   name: '',
@@ -89,5 +91,6 @@ function onSubmit(){
     //     .catch(function (error: any) {
     //       console.log(error);
     //     });
+  isDisable.value = true
 }
 </script>
