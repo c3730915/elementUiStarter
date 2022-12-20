@@ -8,6 +8,7 @@ declare module '@vue/runtime-core' {
     BaseHeader: typeof import('./components/layouts/BaseHeader.vue')['default']
     BaseSide: typeof import('./components/layouts/BaseSide.vue')['default']
     Button2: typeof import('./components/Button2.vue')['default']
+    ElAlert: typeof import('element-plus/es')['ElAlert']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElCheckbox: typeof import('element-plus/es')['ElCheckbox']
     ElCheckboxGroup: typeof import('element-plus/es')['ElCheckboxGroup']
@@ -32,8 +33,7 @@ declare module '@vue/runtime-core' {
     FormSubmit: typeof import('./components/FormSubmit.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     HelloWorld2: typeof import('./components/layouts/HelloWorld2.vue')['default']
-    RouterLink: typeof import('vue-router')['RouterLink']
-    RouterView: typeof import('vue-router')['RouterView']
+    Layout1: typeof import('./components/Layout1.vue')['default']
   }
 }
 
