@@ -1,14 +1,12 @@
 <template>
   <el-config-provider namespace="ep">
-    <BaseHeader />
-    <div style="display: flex">
-      <BaseSide />
-      <div>
-        <img alt="Vue logo" class="element-plus-logo" src="./assets/logo.png" />
-        <HelloWorld msg="Hello Vue 3.0 + Element Plus + Vite" />
-      </div>
-    </div>
+<!--    <BaseHeader />-->
+<!--      <BaseSide />-->
+<!--        <img alt="Vue logo" class="element-plus-logo" src="./assets/logo.png" />-->
+<!--        <HelloWorld msg="Hello Vue 3.0 + Element Plus + Vite" />-->
+        <CountDown></CountDown>
   </el-config-provider>
+<!--  <CountDown></CountDown>-->
 </template>
 
 <style>
@@ -21,3 +19,10 @@
   width: 50%;
 }
 </style>
+<script>
+import CountDown from "./components/CountDown.vue";
+import HelloWorld from "./components/HelloWorld.vue";
+export default {
+  components: {HelloWorld, CountDown}
+}
+</script>
