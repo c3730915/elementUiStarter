@@ -8,11 +8,12 @@
 
           <el-row class="row-bg" justify="center">
             <el-col :span="18"><div class="grid-content ep-bg-purple" />
-              <div style="font-size: 30px">
-                <el-icon><Position /></el-icon>
-                距离润还有
-                <span style="color:red">300 </span>
-                天
+              <div style="font-size: 30px;">
+                <el-icon><Position /></el-icon>距离润还有
+                <span style="color: red">
+               {{down_count.day}} 天
+                </span>
+
               </div>
 
             </el-col>
@@ -54,10 +55,18 @@
 </template>
 
 
-<script>
-export default {
-  name: "CountDown"
-}
+<script lang="ts" setup>
+
+import {computed,onBeforeMount, reactive} from "vue";
+
+const down_count =  reactive({
+  month: 0,
+  day: 0
+})
+onBeforeMount(() => {
+  console.log('onBeforeMount')
+  countTime()
+})
 function countTime() {
   //获取当前时间
   const date = new Date();
@@ -71,9 +80,11 @@ function countTime() {
   let d,h,m,s;
   if (leftTime>=0) {
     d = Math.floor(leftTime/1000/60/60/24);
-    h = Math.floor(leftTime/1000/60/60%24);
+    // h = Math.floor(leftTime/1000/60/60%24);
     m = Math.floor(leftTime/1000/60%60);
-    s = Math.floor(leftTime/1000%60);
+    // s = Math.floor(leftTime/1000%60);
+    down_count.month = m;
+    down_count.day = d;
   }
 }
 </script>
