@@ -21,8 +21,7 @@
 </style>
 <script>
 import CountDown from "./components/CountDown.vue";
-import HelloWorld from "./components/HelloWorld.vue";
 export default {
-  components: {HelloWorld, CountDown}
+  components: { CountDown}
 }
 </script>

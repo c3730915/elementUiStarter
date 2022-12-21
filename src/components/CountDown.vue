@@ -8,7 +8,7 @@
 
           <el-row class="row-bg" justify="center">
             <el-col :span="18"><div class="grid-content ep-bg-purple" />
-              <div style="font-size: 30px;">
+              <div style="font-size: 20px;">
                 <el-icon><Position /></el-icon>距离润还有
                 <span style="color: red">
                {{down_count.day}} 天
@@ -22,7 +22,7 @@
 
           <el-row class="row-bg" justify="center" >
 
-            <el-col :span="6">
+            <el-col :span="18">
               <div class="grid-content ep-bg-purple" style="margin-top: 100px;" >
                 <el-steps :active="2" align-center direction="vertical" :space = 150 finish-status="success">
                   <el-step icon = "Search" title="选目的地" description="办理护照，挑选目的地，研究移民政策" />
