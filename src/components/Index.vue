@@ -52,24 +52,6 @@ onBeforeMount(() => {
   countTime()
 })
 function countTime() {
-  //获取当前时间
-  const date = new Date();
-  const now = date.getTime();
-  //设置截止时间
-  var endDate = new Date("2024-08-03 23:23:23");
-  var end = endDate.getTime();
-  //时间差
-  let leftTime = end-now;
-  //定义变量 d,h,m,s保存倒计时的时间
-  let d,h,m,s;
-  if (leftTime>=0) {
-    d = Math.floor(leftTime/1000/60/60/24);
-    // h = Math.floor(leftTime/1000/60/60%24);
-    m = Math.floor(leftTime/1000/60%60);
-    // s = Math.floor(leftTime/1000%60);
-    down_count.month = m;
-    down_count.day = d;
-  }
 }
 </script>
 
