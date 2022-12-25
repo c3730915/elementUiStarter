@@ -20,8 +20,8 @@
 }
 </style>
 <script>
-import CountDown from "./components";
+import Index from "./components/Index.vue";
 export default {
-  components: { CountDown}
+  components: { CountDown: Index}
 }
 </script>
