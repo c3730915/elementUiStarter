@@ -20,7 +20,7 @@
 }
 </style>
 <script>
-import CountDown from "./components/CountDown.vue";
+import CountDown from "./components";
 export default {
   components: { CountDown}
 }
