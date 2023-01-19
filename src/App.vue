@@ -19,8 +19,9 @@
 </style>
 <script>
 import Button2 from "./components/Button2.vue"
-import Layout2 from "./components/Layout2.vue";
+import Layout2 from "./components/Login.vue";
+import PhotoAlbum from "./components/PhotoAlbum.vue";
 export default {
-  components: {Layout2, Button2}
+  components: {Layout2, Button2,PhotoAlbum}
 }
 </script>
