@@ -1,10 +1,10 @@
 <template>
 
-  <div class="flex">
-    <el-button color="#626aef"  @click="isAble = !isAble">Default</el-button>
-
-    <el-button color="#626aef" :disabled="isAble" :size="currentSize">try disable</el-button>
-  </div>
+  <el-row class="row-bg" justify="center">
+    <el-col :span="6"><div class="grid-content ep-bg-purple" /> 666666</el-col>
+    <el-col :span="6"><div class="grid-content ep-bg-purple-light" /></el-col>
+    <el-col :span="6"><div class="grid-content ep-bg-purple" /></el-col>
+  </el-row>
 
 
 </template>
@@ -12,7 +12,7 @@
 import {ref} from "vue";
 let isAble = ref(false)
 export default {
-  name: "Layout1",
+  name: "Layout2",
 
   data(){
     return {

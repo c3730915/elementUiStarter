@@ -1,9 +1,9 @@
 <template>
   <el-config-provider namespace="ep">
 
-    <FormSubmit></FormSubmit>
+<!--    <FormSubmit></FormSubmit>-->
     <br>
-    <Layout1></Layout1>
+    <Layout2></Layout2>
   </el-config-provider>
 </template>
 
@@ -19,8 +19,8 @@
 </style>
 <script>
 import Button2 from "./components/Button2.vue"
-import Layout1 from "./components/Layout1.vue";
+import Layout2 from "./components/Layout2.vue";
 export default {
-  components: {Layout1, Button2}
+  components: {Layout2, Button2}
 }
 </script>

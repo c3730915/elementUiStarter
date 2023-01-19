@@ -31,18 +31,6 @@ import axios from "axios";
 
 const danger = ref(null)
 
-function getData() {
-  axios.get('http://localhost:8082/test', {
-    params: {
-      ID: 12345
-    }
-  })
-      .then(function (response: any) {
-        console.log(response);
-      })
-      .catch(function (error: any) {
-        console.log(error);
-      }); }
 
 </script>
 <style>
