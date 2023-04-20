@@ -1,8 +1,10 @@
-<script setup lang="ts">
+<script >
+export default {
+  name: "HelloWorld",
+}
 import { ref } from "vue";
 import { ElMessage } from 'element-plus'
 
-defineProps<{ msg: string }>();
 
 const count = ref(0);
 const input = ref("element-plus");

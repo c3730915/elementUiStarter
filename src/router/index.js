@@ -1,7 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-import PhotoAlbum from "../components/PhotoAlbum.vue";
-import Login from "../components/Login.vue";
+import PhotoAlbum from "../views/PhotoAlbum.vue";
+import Login from "../views/Login.vue";
+import HelloWorld from "../views/HelloWorld.vue";
 
 const router = createRouter({
     history: createWebHashHistory(), // createWebHashHistory 为哈希模式的路由，如果需要选择 histiry 模式，可以用 createWebHistory 方法。
@@ -15,6 +16,11 @@ const router = createRouter({
             path: '/login',
             name: 'login',
             component: Login
+        },{
+
+            path:'/',
+            name:"home",
+            component:HelloWorld
         }
     ]
 })

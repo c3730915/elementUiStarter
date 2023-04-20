@@ -1,9 +1,7 @@
 <template>
   <el-config-provider namespace="ep">
 
-<!--    <FormSubmit></FormSubmit>-->
-    <br>
-    <Layout2></Layout2>
+    <router-view></router-view>
   </el-config-provider>
 </template>
 
@@ -18,10 +16,10 @@
 }
 </style>
 <script>
-import Button2 from "./components/Button2.vue"
-import Layout2 from "./components/Login.vue";
-import PhotoAlbum from "./components/PhotoAlbum.vue";
+import HelloWorld from "./views/HelloWorld.vue"
+import Login from "./views/Login.vue";
+import PhotoAlbum from "./views/PhotoAlbum.vue";
 export default {
-  components: {Layout2, Button2,PhotoAlbum}
+  components: {Login, HelloWorld,PhotoAlbum}
 }
 </script>
