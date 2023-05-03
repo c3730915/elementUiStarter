@@ -6,13 +6,6 @@ import '@vue/runtime-core'
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Button2: typeof import('./components/Button2.vue')['default']
-    ElButton: typeof import('element-plus/es')['ElButton']
-    ElCheckbox: typeof import('element-plus/es')['ElCheckbox']
-    ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
-    ElDatePicker: typeof import('element-plus/es')['ElDatePicker']
-    ElInput: typeof import('element-plus/es')['ElInput']
-    ElRow: typeof import('element-plus/es')['ElRow']
-    ElTag: typeof import('element-plus/es')['ElTag']
     FormSubmit: typeof import('./components/FormSubmit.vue')['default']
     Layout1: typeof import('./components/Layout1.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
